@@ -1,0 +1,33 @@
+h2 {
+	font-size: 40px;
+	color: red
+}
+.Title{
+	font-weight: bold;
+	font-size: 18px;
+	color: blue
+}
+input[type=text] {
+	width: 500px;
+}
+
+input[type=email]{
+	height: 50px;
+}
+input[type=submit]:hover{
+		color: red;	
+}
+legend{
+	color: black;
+}
+
+fieldset:first-child{
+	color: red;
+}
+
+div:nth-last-of-type(2){
+	color: green;
+}
+div:last-child{
+	color: brown;
+}

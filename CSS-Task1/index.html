@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Task1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<form name="HTMLForm" method="get" action="http://vnexpress.net">
+		<h2>From gửi dữ liệu</h2>
+		<br/>
+		<table>
+			<colgroup>
+				<col width="150px">
+				<col width="200px">
+			</colgroup>
+			<tr>
+				<td><label for="TieuDe"  class= "Title" >Tiêu đề</label></td>
+				<td><inp2ut type="text" name="TieuDe" id = "TieuDe" autofocus="autofocus" required="true"></td>
+			</tr>
+			<tr>
+				<td  ><label for="NoiDung" class= "Title">Nội dung</label></td>
+				<td><textarea name="NoiDung" id="NoiDung" required="true"></textarea></td>
+			</tr>
+			<tr>
+				<td ><label for="GioiTinh" class= "Title">Giới tính</label></td>
+				<td>
+					<div><input type="radio" name="GioiTinh" value="Nam" /> Nam </div>
+					
+					<div><input type="radio" id="GioiTinh" checked="" name="GioiTinh" value="Nu"/> Nữ</div>
+					
+					<div><input type="radio" name="GioiTinh" value="Khong xac dinh"> Không xác định</div>
+					
+				</td>
+			</tr>
+			<tr>
+				<td ><label for="ChuyenMucPhanHoi" class= "Title">Chuyên mục phản hồi</label></td>
+				<td>
+					<select id="ChuyenMucPhanHoi" name="Chuyen muc phan hoi">
+						<option value="The thao">Thể thao</option>
+						<option value="Chinh tri" selected = "selected">Chính trị</option>
+						<option value="Van hoa">Văn hóa</option>
+					</select>
+					<br>
+				</td>
+
+			</tr>
+			<tr>
+				<td ><label for="SoThich" class= "Title">Sở thích</label></td>
+				<td>
+					<fieldset>
+						<legend>Chọn nhiều sở thích</legend>
+							<div><input id ="SoThich" type="checkbox" checked="" name="So thich" value="Bong da"> Bóng đá</div>
+							<div><input type="checkbox" checked="" name="So thich" value="Boi"> Bơi</div>
+							<div><input type="checkbox" name="So thich" value="Ca hat"> Ca hát</div>
+					</fieldset>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td ><label for="Email" class= "Title" >Email</label></td>
+				<td><input id ="Email" type="Email" name="Email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="hidden" name="HoTen"value="Nguyễn Thành Chí Bảo" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="reset" name="resetBtn" value="Reset"/>
+					<input type="submit" src="submit.gif"name="submitBtn" alt="Submit" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	<iframe width="560" 
+			height="315" 
+			src="https://www.youtube.com/embed/Ik-DhHJM8eo" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe>
+
+</body>
+</html>

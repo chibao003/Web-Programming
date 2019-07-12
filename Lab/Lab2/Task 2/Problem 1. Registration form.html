@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 1. Registration form</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.FullWidth {
+			width: calc(100% - 4px);
+		}
+		.submitClear{
+			text-align: center;
+			background-color: #38C9AE;
+		}
+		.lableRight{
+			text-align: right;
+		}
+		.textCity{
+			width: 400px;
+		}
+		.textSate{
+			width: calc(100% - 4px);
+		}
+		.State{
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table border="1">
+		<tr>
+			<td class="lableRight"><label><b>Last Name</b></label></td>
+			<td><input class="FullWidth" type="text" name="LastName"></td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>First Name</b></label></td>
+			<td><input class="FullWidth" type="text" name="FirstName"></td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Address</b></label></td>
+			<td><textarea class="FullWidth" type="text" name="LastName"></textarea></td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>City</b></label></td>
+			<td>
+				<table>
+				<tr>
+					<td><input class="textCity" type="text" name="textCity" ></td>
+					<td class="State"><label><b>State</b></label></td>
+					<td><input class="textSate" type="text" name="textSate"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Zip/Postal Code</b></label></td>
+			<td><input input class="FullWidth" type="text" name="textZip/Postal Code"></td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Country</b></label></td>
+			<td><select class="FullWidth" name="Country">
+					<option value="VietNam">Việt Nam</option>
+					<option selected = "selected" value="Bulgaria">Bulgaria</option>
+					<option value="USA">USA</option>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Phone(country code, area code, number</b></label></td>
+			<td>
+				<table>
+					<tr>
+						<td>(+</td>
+						<td><input type="text" name="textCountryCode"></td>
+						<td>)</td>
+						<td><input type="text" name="textAreaCode"></td>
+						<td>-</td>
+						<td><input type="text" name="textNumber"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Email</b></label></td>
+			<td><input input class="FullWidth" type="Email" name="Email"></td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Birth date</b></label></td>
+			<td>
+				<table>
+					<tr>
+						<td>Month</td>
+						<td><input type="text" name="textMonth"></td>
+						<td>Day</td>
+						<td><input type="text" name="textDay"></td>
+						<td>Year(4 digit)</td>
+						<td><input type="text" name="textYear"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Gender</b></label></td>
+			<td><select class="FullWidth" name="Gender">
+					<option selected = "selected" value="Male">Male</option>
+					<option  value="Female">Female</option>
+					<option value="Undefined">Undefined</option>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Starting date</b></label></td>
+			<td>
+				<table class="FullWidth">
+					<tr>
+						<td><input type="radio" name="StartingDate" value="Spring">Spring 2016
+						</td>
+						<td><input type="radio" name="StartingDate" value="Summer">Summer 2006</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="lableRight"><label><b>Comments/Questions</b></label></td>
+			<td><textarea class="FullWidth" type="textarea" name="textComments/Questions"></textarea></td>
+		</tr>
+		<tr>
+			<td class="submitClear" colspan="2" >
+				<input type="submit" src="submit.gif" name="submitBtn" alt ="Submit"/>
+				<input type="reset" name="resetBtn" value="Clear This Form"/>		
+			</td>
+		</tr>
+	</table>
+	</form>
+
+</body>
+</html>
