@@ -1,0 +1,16 @@
+ .flag{
+ 	width: 20px;
+ 	height: auto;
+ }
+ span{
+ 	vertical-align: top;
+ }
+ tr:nth-child(even){
+ 	background-color: white;
+ }
+ tr:nth-child(odd){
+ 	background-color: #FAE5D3;
+ }
+ tr:first-child{
+ 	background-color: #27AE60;
+ }
