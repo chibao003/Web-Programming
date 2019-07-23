@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Border</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.none-border{
+			border:none;
+		}
+		.dotted-boder{
+			border: 2px dotted blue;
+			/*border-radius: 50%; */
+		/*	width: 100px; height: 100px;
+			background-color: pink;*/
+		/*	opacity: 0.5;*/
+			padding: 10px 20px 30px 40px;
+		}
+
+
+		.other-boder{
+			border-bottom: 3px groove black;
+			border-top: 1px dashed red;
+			border-left: 4px solid yellow;
+			border-right: 2px double green;
+
+			/*border-top-left-radius: 5px;
+			border-top-right-radius: 300px;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 20%; */
+			border-radius: 5px 300px 50% 20%;
+		}
+		.outset{
+			border: outset green;
+			box-shadow: 10px 10px 5px green;
+		/*	background-image: url("https://cdn.shopify.com/s/files/1/0043/8471/8938/products/155613364003514899.jpg?v=1556133795");
+			width: auto;height: 700px;*/
+			margin-top: 50px;
+		}
+		.div-fa{
+			border: groove red;
+			width: 100%;height: 100px;
+		}
+		.boder1{
+			border: 2px groove red;
+			width: 75%;height: 75px;
+			display:inline-block;
+			box-sizing: border-box;
+			float: left;
+		}
+		.boder2{
+			border: 2px groove black;
+			width: 25%;
+			display:inline-block;
+			box-sizing: border-box;
+			float: right;
+		}
+		.divpos{
+			border: 1px groove black;
+			margin-top: 50px;
+			width:100%;height: 100px; 
+			position: relative;
+		}
+		.divpos2{
+			border: 1px groove;
+			background-color: blue;
+			width:10%; height: 50px; 
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			text-align: center;
+		}
+		}
+	</style>
+</head>
+<body>
+	  <p class="none-border">None boder</p>
+	  <p class="dotted-boder">Dotted boder</p>
+	  <p class="other-boder">Other boder</p>
+	  <p class="outset">Outset</p>
+
+	  <div class="div-fa">Dịch vụ Tổng đài của chúng tôi cung cấp giải pháp liên lạc toàn diện, linh hoạt và tin cậy cho mọi nhu cầu và quy mô của doanh nghiệp. Để thiết lập một hệ thống Tổng đài, chưa bao giờ đơn giản hơn. Chúng tôi sẽ giúp bạn khởi động sự chuyên nghiệp này ngay hôm nayBạn có quá nhiều sự lo lắng và câu hỏi trong đầu khi chọn lựa, đầu tư hoặc mua sắm một hệ thống tổng đài cho doanh nghiệp. Chúng tôi có câu trả lời rất đơn giản và cam kết đáp ứng đúng yêu cầu của bạn. CloudPBX cung cấp một dịch vụ tổng đài ảo trọn gói và toàn diện cho mọi quy mô doanh nghiệp với sự linh hoạt, tiện lợi, tin cậy và chất lượng dịch vụ tiêu chuẩn nhất.
+	  	<div class="boder1">1</div>
+	  	<div class="boder2">2</div>
+	  </div>
+
+	  <div class="divpos">Khung DIV
+	  	<div class="divpos2">Sale sap san.Sale khung khiep</div>
+	  </div>
+</body>
+</html>
