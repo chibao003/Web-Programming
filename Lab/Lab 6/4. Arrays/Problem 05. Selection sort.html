@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 05. Selection sort</title>
+	<style type="text/css">
+		input{
+			width: 12%;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id = "arrayNumber" name="" value="" placeholder="Nhập vào chuỗi cần sắp xếp: ">
+	<button type="button" onclick="show_result()">Show</button>
+	<script type="text/javascript">
+		function show_result() {
+			var str = document.getElementById("arrayNumber").value;
+			var arrayNumber = str.split(" ");
+			var tmp=0;
+			for(var i=0; i<arrayNumber.length;i++){
+				for(var j=i+1;j<=arrayNumber.length;j++){
+					if(arrayNumber[i] > arrayNumber[j]){
+						tmp = arrayNumber[j];
+						arrayNumber[j]=arrayNumber[i];
+						arrayNumber[i]=tmp;
+					}
+				}
+			}
+			for(var k=0; k<arrayNumber.length;k++){
+				document.writeln(arrayNumber[k]);
+			}
+			
+		}
+	</script>
+</body>
+</html>

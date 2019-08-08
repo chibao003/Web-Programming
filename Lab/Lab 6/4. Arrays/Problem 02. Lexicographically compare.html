@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 02. Lexicographically compare</title>
+</head>
+<body>
+
+	<input type="text" id = "str1" name="" value="" placeholder="Nhập vào 1 chuỗi: ">
+	<input type="text" id = "str2" name="" value="" placeholder="Nhập vào 2 chuỗi: ">
+	<button type="button" onclick="show_result()">Show</button>
+	<script type="text/javascript">
+
+			function show_result() {
+				var str1 = document.getElementById("str1").value;
+				var str2 = document.getElementById("str2").value;
+				var ar1 = str1.split("");
+				var ar2 = str2.split("");
+
+				var len = ar1.length > ar2.length ? ar1.length: ar2.length;
+		
+				for(var i = 0; i<len ; i++){
+					if(ar1[i] > ar2[i]){
+						return document.writeln("chuỗi 1 lớn hơn.");
+					}
+					if(ar1[i] < ar2[i]){
+						return document.writeln("chuỗi 2 lớn hơn.");
+					}
+				}
+				if(ar1.length > ar2.length){
+					return document.writeln("chuỗi 1 lớn hơn.");
+					}
+				else if(ar1.length < ar2.length){
+					return document.writeln("chuỗi 2 lớn hơn.");
+				}
+				else{
+					document.writeln("Hai chuỗi bằng nhau.");
+				}		
+				
+			}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 06. Frequent number</title>
+</head>
+<body>
+	<input type="text" id = "arrayNumber" name="" value="" placeholder="Nhập vào chuỗi cần sắp xếp: ">
+	<button type="button" onclick="show_result()">Show</button>
+	<script type="text/javascript">
+		function show_result() {
+			var str = document.getElementById("arrayNumber").value;
+			var arrayNumber = str.split(" ");
+			var max = 1;
+            var number = 0;
+            for (var i = 0; i < arrayNumber.length; i++) {
+                var count = 0;
+                for (var j = 0; j < arrayNumber.length; j++) {
+                    if (arrayNumber[i] == arrayNumber[j]) {
+                        count++;
+
+                    }
+                }
+                if (count > max) {
+                    max = count;
+                    number = arrayNumber[i];
+                }
+            }
+            document.writeln(number + '(' + max + ' times' + ')');
+		}
+	</script>
+
+</body>
+</html>

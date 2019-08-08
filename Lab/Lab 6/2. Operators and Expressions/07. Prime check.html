@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>07. Prime check</title>
+</head>
+<body>
+	<input type="text" id = "prime" name="" value="" placeholder="Nhập số nguyên tố">
+	<button type="button" onclick="show_result()">Kiểm tra</button>
+	<div>Result: </div>
+	<div id="result"></div>
+	
+	<script type="text/javascript">
+		function show_result(){
+			var primeNumber = document.getElementById("prime").value;
+			var count =0;
+			for(var i =2; i<=Math.round(Math.sqrt(primeNumber)) ;i++){
+				if(primeNumber % i ==0){
+					count++;
+				}
+			}
+			if(count>=1 || parseInt(primeNumber) ===0 ||parseInt(primeNumber) ===1 ){
+				document.getElementById("result").innerText = "False";
+			}else{
+				document.getElementById("result").innerText = "True";
+			}
+		}
+	</script>
+
+</body>
+</html>

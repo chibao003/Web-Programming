@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id = "arrayNumber" name="" value="" placeholder="Nhập vào 1 dãy số: ">
+	<button type="button" onclick="show_result()">Show</button>
+	<script type="text/javascript">
+		function show_result(){
+			var str = document.getElementById("arrayNumber").value;
+			var arrayNumber = str.split(" ");
+			var sum=0;
+			var min =  parseInt(arrayNumber[0]);
+			var max =  parseInt(arrayNumber[0]);
+			var avg =0;
+			for (var i = 0; i < arrayNumber.length; i++) {
+				
+				if(min > parseInt(arrayNumber[i])){
+					min =  parseInt(arrayNumber[i]);
+				} 
+				if(max <  parseInt(arrayNumber[i])){
+					max =  parseInt(arrayNumber[i]);
+				}
+
+				sum += parseInt(arrayNumber[i]);
+				avg = sum / arrayNumber.length;
+			}
+			document.writeln("Sum: " + sum + "<br>");
+			document.writeln("Min " + min + "<br>");
+			document.writeln("Max: " + max + "<br>");
+			document.writeln("Avg: " + avg+ "<br>");
+		}
+	</script>
+</body>
+</html>
